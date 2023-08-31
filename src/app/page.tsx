@@ -12,7 +12,7 @@ export default function Home() {
           About us
         </div>
         <div className="w-6/12">
-        At R-Think, we're obsessed with the fusion of traditional IT solutions and avant-garde AI technologies. Our aim? To position your business at the cutting edge of technological evolution.
+        At R-Think, we are obsessed with the fusion of traditional IT solutions and avant-garde AI technologies. Our aim? To position your business at the cutting edge of technological evolution.
         </div>
       </div>
     </div>
