@@ -1,5 +1,5 @@
 import { Separator } from "@/components/ui/separator";
-import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
         </div>
       </div>
       <Separator className="bg-black"></Separator>
-      <div className="flex flex-col md:flex-row mt-10">
+      <div className="flex flex-col md:flex-row mt-10 justify-center">
         <div className="flex flex-col md:w-4/12 ml-5 mt-5">
           <div className="font-bold">Our Team at R-Think Software</div>
           <div className="mt-5 mb-5">
@@ -47,7 +47,7 @@ export default function Home() {
           </div>
         </div>
         <div className="mt-4 md:mt-0">
-          <img src="/office.jpeg" />
+          <Image src="/office.jpeg" alt="Out team" width="850" height="600" />
         </div>
       </div>
       <Separator className="bg-black mt-10"></Separator>
