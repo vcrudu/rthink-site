@@ -25,7 +25,7 @@ export default function Home() {
         <div className="flex flex-col md:w-4/12 ml-5 mt-5">
           <div className="font-bold">Our Team at R-Think Software</div>
           <div className="mt-5 mb-5">
-            We're a nimble group of software engineers and data scientists. Our
+            We&apos;re a nimble group of software engineers and data scientists. Our
             forte? Infusing AI into traditional software, especially when faced
             with:
           </div>
@@ -36,14 +36,14 @@ export default function Home() {
             <b>Evolving Issues:</b> Problems that change as days go by.
           </div>
           <div className="ml-4 mb-2">
-            <b>Time-Shifted Puzzles:</b> Where the right answers aren't always
+            <b>Time-Shifted Puzzles:</b> Where the right answers aren&apos;t always
             the same.
           </div>
           <div className="ml-4 mb-5">
             <b>Boundary-Pushers:</b> Tasks that make us rethink the possible.
           </div>
           <div>
-            Give us a challenge, and we'll engineer a smart solution for you.
+            Give us a challenge, and we&apos;ll engineer a smart solution for you.
           </div>
         </div>
         <div className="mt-4 md:mt-0">
