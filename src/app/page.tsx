@@ -3,10 +3,10 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col w-full">
+    <div className="flex flex-col">
       <video src="/rthink.mp4" muted autoPlay loop playsInline></video>
-      <div className="relative bottom-36 left-10 md:bottom-56 md:left-20">
-        <div className="absolute text-white w-4/6 md:w-8/12 text-[30px] md:text-[40px]">
+      <div className="relative">
+        <div className="absolute bottom-36 left-10 md:bottom-56 md:left-20 w-4/6 md:w-8/12 text-white w-4/6 md:w-8/12 text-[30px] md:text-[40px]">
           We Elevate Intelligence for Your System.
         </div>
       </div>
@@ -47,7 +47,7 @@ export default function Home() {
           </div>
         </div>
         <div className="mt-4 md:mt-0">
-          <img src="/office.jpeg" alt="Out team" width="850" height="600" />
+          <Image src="/office.jpeg" alt="Out team" width="850" height="600" />
         </div>
       </div>
       <Separator className="bg-black mt-10"></Separator>

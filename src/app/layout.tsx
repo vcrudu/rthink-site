@@ -25,7 +25,7 @@ export default function RootLayout({
  
   return (
     <html lang='en'>
-      <body style={{scrollBehavior: 'smooth'}} className={cn('bg-slate-300', inter.className)}>
+      <body style={{scrollBehavior: 'smooth'}} className={cn('bg-slate-300 inset-0', inter.className)}>
         <Header />
         {children}
       </body>
