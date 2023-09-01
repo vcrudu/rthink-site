@@ -1,12 +1,13 @@
 import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
+import teamPicture from "@/app/images/office.jpeg";
 
 export default function Home() {
   return (
     <div className="flex flex-col">
       <video src="/rthink.mp4" muted autoPlay loop playsInline></video>
       <div className="relative">
-        <div className="absolute bottom-36 left-10 md:bottom-56 md:left-20 w-4/6 md:w-8/12 text-white w-4/6 md:w-8/12 text-[30px] md:text-[40px]">
+        <div className="absolute bottom-5 left-10 md:bottom-36 md:left-20 text-white w-4/6 md:w-8/12 text-[26px] md:text-[40px]">
           We Elevate Intelligence for Your System.
         </div>
       </div>
@@ -21,13 +22,13 @@ export default function Home() {
         </div>
       </div>
       <Separator className="bg-black"></Separator>
-      <div className="flex flex-col md:flex-row mt-10 justify-center">
-        <div className="flex flex-col md:w-4/12 ml-5 mt-5">
+      <div className="flex flex-col lg:flex-row mt-10 justify-center">
+        <div className="flex flex-col lg:w-4/12 ml-5 mt-5">
           <div className="font-bold">Our Team at R-Think Software</div>
           <div className="mt-5 mb-5">
-            We&apos;re a nimble group of software engineers and data scientists. Our
-            forte? Infusing AI into traditional software, especially when faced
-            with:
+            We&apos;re a nimble group of software engineers and data scientists.
+            Our forte? Infusing AI into traditional software, especially when
+            faced with:
           </div>
           <div className="ml-4 mb-2">
             <b>Big Challenges:</b> Those that demand deep dives and effort.
@@ -36,18 +37,19 @@ export default function Home() {
             <b>Evolving Issues:</b> Problems that change as days go by.
           </div>
           <div className="ml-4 mb-2">
-            <b>Time-Shifted Puzzles:</b> Where the right answers aren&apos;t always
-            the same.
+            <b>Time-Shifted Puzzles:</b> Where the right answers aren&apos;t
+            always the same.
           </div>
           <div className="ml-4 mb-5">
             <b>Boundary-Pushers:</b> Tasks that make us rethink the possible.
           </div>
           <div>
-            Give us a challenge, and we&apos;ll engineer a smart solution for you.
+            Give us a challenge, and we&apos;ll engineer a smart solution for
+            you.
           </div>
         </div>
-        <div className="mt-4 md:mt-0">
-          <Image src="/office.jpeg" alt="Out team" width="850" height="600" />
+        <div className="w-full lg:w-8/12 mt-5">
+          <Image alt="Out team" src={teamPicture} />
         </div>
       </div>
       <Separator className="bg-black mt-10"></Separator>
