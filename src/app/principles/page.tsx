@@ -25,7 +25,7 @@ export default function Principles() {
         <p className="w-screen md:w-7/12 ">
           At R-Think, we operate on a principle of <b>pragmatic innovation</b>.
           We understand that in the rapidly evolving world of AI, reinventing
-          the wheel isn't just redundant—it's counterproductive. Instead, we
+          the wheel isn&apos;t just redundant—it&apos;s counterproductive. Instead, we
           focus on applying the latest and best AI techniques available in the
           industry. By building upon proven methodologies and <b>State-Of-The-Art</b>&nbsp;
           technologies, we streamline our development process. This approach not
@@ -35,7 +35,7 @@ export default function Principles() {
           cutting-edge and economically efficient for our clients.
         </p>
         <p className="w-screen md:w-7/12 ">
-          In our pursuit of excellence, we've integrated <b>MLOps</b> into our
+          In our pursuit of excellence, we&apos;ve integrated <b>MLOps</b> into our
           core development practices. MLOps, or DevOps for machine learning,
           ensures that our AI models are not just theoretical constructs but are
           robust, scalable, and ready for real-world application. By automating
