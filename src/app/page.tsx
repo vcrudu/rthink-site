@@ -1,11 +1,11 @@
 import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
-import teamPicture from "@/app/images/office.jpeg";
+import teamPicture from "@/app/images/office.jpg";
 
 export default function Home() {
   return (
     <div className="flex flex-col">
-      <video src="/rthink.mp4" muted autoPlay loop playsInline></video>
+      <video className="brightness-50" src="/rthink.mp4" muted autoPlay loop playsInline></video>
       <div className="relative">
         <div className="absolute bottom-5 left-10 md:bottom-36 md:left-20 text-white w-4/6 md:w-8/12 text-[26px] md:text-[40px]">
           We Elevate Intelligence for Your System.
@@ -50,17 +50,6 @@ export default function Home() {
         </div>
         <div className="w-full lg:w-8/12 mt-5">
           <Image alt="Out team" src={teamPicture} />
-        </div>
-      </div>
-      <Separator className="bg-black mt-10"></Separator>
-      <div className="flex flex-col md:flex-row justify-center md:justify-around mt-4 mb-40 md:ml-10">
-        <div className="text-center">R-Think Software© 2023</div>
-        <div>
-          <ul className="w-full flex flex-col justify-center text-base">
-            <li className="h-10 flex items-center justify-center hover:bg-sky-300">
-              <a href="mailto:info@rthink.ai">Contact us</a>
-            </li>
-          </ul>
         </div>
       </div>
     </div>

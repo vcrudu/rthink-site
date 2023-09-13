@@ -6,6 +6,7 @@ import Chat from './components/Chat'
 import { cn } from '@/lib/utils'
 
 import Header from './components/Header';
+import Footer from './components/Footer'
 
 
 
@@ -25,9 +26,10 @@ export default function RootLayout({
  
   return (
     <html lang='en'>
-      <body style={{scrollBehavior: 'smooth'}} className={cn('bg-slate-300 inset-0', inter.className)}>
-        <Header />
-        {children}
+      <body style={{scrollBehavior: 'smooth'}} className={cn('bg-blue-50 inset-0', inter.className)}>
+        <Header/>
+          {children}
+        <Footer/>
       </body>
     </html>
   )

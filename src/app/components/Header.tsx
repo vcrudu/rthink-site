@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { usePathname } from 'next/navigation'
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 import { X, Menu } from "lucide-react";
@@ -9,26 +10,33 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [headerBackground, setHeaderBackground] = useState("bg-transparent");
   const [textColor, setTextColor] = useState("text-white");
+  const pathname = usePathname();
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
+    if (pathname === "/") {
+        setTextColor("text-white");
+        setHeaderBackground("bg-transparent");
+    } else {
+        setTextColor("text-black");
+        setHeaderBackground("bg-blue-50");
+    }
+    if (pathname === "/" && typeof window !== "undefined") {
       const handleScroll = () => {
         const position = window.scrollY;
         if (position < 100) {
           setHeaderBackground("bg-transparent");
           setTextColor("text-white");
         } else {
-          setHeaderBackground("bg-slate-300");
+          setHeaderBackground("bg-blue-50");
           setTextColor("text-black");
         }
-        console.log(position);
       };
 
       window.addEventListener("scroll", handleScroll);
 
       return () => window.removeEventListener("scroll", handleScroll);
     }
-  }, []);
+  }, [pathname]);
 
   return (
     <header
@@ -39,7 +47,7 @@ export default function Header() {
       )}
     >
       <div className="flex flex-col justify-center flex-nowrap font-bold text-3xl">
-        <Link className="flex flex-row justify-center w-32" href="#">
+        <Link className="flex flex-row justify-center w-32" href="/">
           R-Think
         </Link>
       </div>
@@ -49,13 +57,13 @@ export default function Header() {
             <Link href="/">About</Link>
           </li>
           <li className="px-4 hover:underline">
-            <Link href="/">Blog</Link>
+            <Link href="/blog">Blog</Link>
           </li>
-          <li className="px-4 hover:underline">
+{/*           <li className="px-4 hover:underline">
             <Link href="/">Careers</Link>
-          </li>
+          </li> */}
           <li className="px-4 hover:underline">
-            <Link href="/">Statute</Link>
+          <Link href="/principles">Our Principles</Link>
           </li>
           <li className="px-4 hover:underline">
             <a href="mailto:info@rthink.ai">Contact us</a>
@@ -73,10 +81,10 @@ export default function Header() {
         </button>
       </div>
       {menuOpen ? (
-        <div className="absolute left-0 w-screen text-black">
-          <div className="flex flex-col justify-center items-center pt-6 md:hidden bg-slate-300">
+        <div className="absolute left-0 w-screen text-white">
+          <div className="flex flex-col justify-center items-center pt-6 md:hidden bg-blue-50">
             <div className="pl-4 flex flex-col self-start flex-nowrap font-bold text-3xl">
-              <Link className="flex flex-row w-32" href="#">
+              <Link className="flex flex-row w-32" href="/">
                 R-Think
               </Link>
             </div>
@@ -85,13 +93,13 @@ export default function Header() {
                 <Link href="/">About</Link>
               </li>
               <li className="h-10 flex items-center justify-center hover:bg-sky-300">
-                <Link href="/">Blog</Link>
+                <Link href="/blog">Blog</Link>
               </li>
-              <li className="h-10 flex items-center justify-center hover:bg-sky-300">
+              {/* <li className="h-10 flex items-center justify-center hover:bg-sky-300">
                 <Link href="/">Careers</Link>
-              </li>
+              </li> */}
               <li className="h-10 flex items-center justify-center hover:bg-sky-300">
-                <Link href="/">Statute</Link>
+                <Link href="/principles">Our Principles</Link>
               </li>
               <li className="h-10 flex items-center justify-center hover:bg-sky-300">
                 <Link href="/">Contact us</Link>
