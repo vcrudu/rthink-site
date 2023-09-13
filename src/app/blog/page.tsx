@@ -6,8 +6,7 @@ import squares_circles from "@/app/images/squares_circles.jpg";
 import dots from "@/app/images/dots.jpg";
 import rectangles from "@/app/images/rectangles.jpg";
 import Link from "next/link";
-import { json } from "stream/consumers";
-import { useArticles, ArticleType } from "@/lib/utils";
+import { useArticles, ArticleType } from "@/lib/useArticles";
 
 function getImage(iconName: string) {
   switch (iconName) {
