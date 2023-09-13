@@ -81,7 +81,7 @@ export default function Header() {
         </button>
       </div>
       {menuOpen ? (
-        <div className="absolute left-0 w-screen text-white">
+        <div className="absolute left-0 w-screen text-black">
           <div className="flex flex-col justify-center items-center pt-6 md:hidden bg-blue-50">
             <div className="pl-4 flex flex-col self-start flex-nowrap font-bold text-3xl">
               <Link className="flex flex-row w-32" href="/">

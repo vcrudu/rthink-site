@@ -15,7 +15,7 @@ export default function Home() {
         <div className="text-center mb-8 font-bold text-[50px] w-80 px-8">
           About us
         </div>
-        <div className="w-6/12">
+        <div className="w-10/12 md:w-6/12">
           At R-Think, we are obsessed with the fusion of traditional IT
           solutions and avant-garde AI technologies. Our aim? To position your
           business at the cutting edge of technological evolution.
@@ -48,7 +48,7 @@ export default function Home() {
             you.
           </div>
         </div>
-        <div className="w-full lg:w-8/12 mt-5 pr-5">
+        <div className="w-full lg:w-8/12 mt-5 pl-5 pr-5">
           <Image alt="Out team" src={teamPicture} />
         </div>
       </div>
