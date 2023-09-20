@@ -39,7 +39,7 @@ export default function Blog() {
                   width={300}
                   alt={article.title}
                 />
-                <div className="w-72 mb-5">{article.title}</div>
+                <div className="w-72 mb-5 font-semibold text-center">{article.title}</div>
               </div>
             </Link>
           ))}
