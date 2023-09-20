@@ -5,7 +5,14 @@ import teamPicture from "@/app/images/office.jpg";
 export default function Home() {
   return (
     <div className="flex flex-col">
-      <video className="brightness-50" src="/rthink.mp4" muted autoPlay loop playsInline></video>
+      <video
+        className="brightness-50"
+        src="/rthink.mp4"
+        muted
+        autoPlay
+        loop
+        playsInline
+      ></video>
       <div className="relative">
         <div className="absolute bottom-5 left-10 md:bottom-36 md:left-20 text-white w-4/6 md:w-8/12 text-[26px] md:text-[40px]">
           We Elevate Intelligence for Your System.
@@ -21,7 +28,9 @@ export default function Home() {
           business at the cutting edge of technological evolution.
         </div>
       </div>
-      <Separator className="bg-black"></Separator>
+      <div className="p-5">
+        <Separator className="bg-black"></Separator>
+      </div>
       <div className="flex flex-col lg:flex-row mt-10 justify-center">
         <div className="flex flex-col lg:w-4/12 ml-5 mt-5">
           <div className="font-bold">Our Team at R-Think Software</div>

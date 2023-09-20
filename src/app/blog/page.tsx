@@ -27,19 +27,23 @@ export default function Blog() {
   return (
     <div className="flex flex-col mt-32">
       <div className="text-[60px] ml-10">Blog</div>
-      <Separator className="bg-black mt-10"></Separator>
+      <div className="p-5">
+        <Separator className="bg-black mt-10"></Separator>
+      </div>
       <div className="flex flex-col justify-center md:flex-row md:justify-evenly mt-10">
         {articles &&
-          articles.map((article:ArticleType) => (
+          articles.map((article: ArticleType) => (
             <Link key={article.id} href={`/blog/${article.id}`}>
               <div className="flex flex-col justify-center items-center mb-16 md:mb-0">
                 <Image
-                  className="mb-2"
+                  className="mb-6"
                   src={getImage(article.iconName)}
                   width={300}
                   alt={article.title}
                 />
-                <div className="w-72 mb-5 font-semibold text-center">{article.title}</div>
+                <div className="w-72 mb-5 font-semibold text-center">
+                  {article.title}
+                </div>
               </div>
             </Link>
           ))}
