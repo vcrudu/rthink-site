@@ -45,7 +45,7 @@ export default function Home() {
 
           <div className="mt-5 ml-4 mb-2">
             <b>Next wave</b> of AI-driven solutions is here: from intelligent 
-            { } <b>chatbots</b> to predictive insights, we're pioneering the future of
+            { } <b>chatbots</b> to predictive insights, we&apos;re pioneering the future of
             automation.
           </div>
 
