@@ -22,7 +22,7 @@ export default function Home() {
         <div className="text-center mb-8 font-bold text-[50px] w-80 px-8">
           About us
         </div>
-        <div className="w-10/12 md:w-6/12">
+        <div className="w-10/12 md:w-6/12 text-lg">
           At R-Think, we are obsessed with the fusion of traditional IT
           solutions and avant-garde AI technologies. Our aim? To position your
           business at the cutting edge of technological evolution.
@@ -31,31 +31,40 @@ export default function Home() {
       <div className="p-5">
         <Separator className="bg-black"></Separator>
       </div>
-      <div className="flex flex-col lg:flex-row mt-10 justify-center">
-        <div className="flex flex-col lg:w-4/12 ml-5 mt-5">
-          <div className="font-bold">Our Team at R-Think Software</div>
-          <div className="mt-5 mb-5">
-            We&apos;re a nimble group of software engineers and data scientists.
-            Our forte? Infusing AI into traditional software, especially when
-            faced with:
+      <div className="flex flex-col lg:flex-row mt-5 justify-center">
+        <div className="flex flex-col lg:w-4/12 ml-5 mt-5 text-lg">
+          <div className="font-bold">The AI Revolution Begins Here!</div>
+          <div className="mt-5 ml-4 mb-2">
+            <b>Unlock</b> the Future of Automation with Us! Dive into a world
+            where state-of-the-art text-generative AI transforms your business.
           </div>
+          <div className="mt-5 ml-4 mb-2">
+            <b>Dive</b> into a world where state-of-the-art text-generative AI
+            transforms your business.
+          </div>
+
+          <div className="mt-5 ml-4 mb-2">
+            <b>Next wave</b> of AI-driven solutions is here: from intelligent 
+            { } <b>chatbots</b> to predictive insights, we're pioneering the future of
+            automation.
+          </div>
+
+          {/* <div className="ml-4 mb-2">
+            <b>Stay ahead,</b> innovate, and let our cutting-edge methods power
+            your success.
+          </div>
+
           <div className="ml-4 mb-2">
-            <b>Big Challenges:</b> Those that demand deep dives and effort.
+            <b>Choose</b> the best in AI outsourcing.
           </div>
-          <div className="ml-4 mb-2">
-            <b>Evolving Issues:</b> Problems that change as days go by.
+
+          <div className="ml-4 mb-2 text-lg">
+            <b>Experience</b> unparalleled efficiency with every solution.
           </div>
-          <div className="ml-4 mb-2">
-            <b>Time-Shifted Puzzles:</b> Where the right answers aren&apos;t
-            always the same.
-          </div>
+
           <div className="ml-4 mb-5">
-            <b>Boundary-Pushers:</b> Tasks that make us rethink the possible.
-          </div>
-          <div>
-            Give us a challenge, and we&apos;ll engineer a smart solution for
-            you.
-          </div>
+            <b>Elevate</b> your business today!
+          </div> */}
         </div>
         <div className="w-full lg:w-8/12 mt-5 pl-5 pr-5">
           <Image alt="Out team" src={teamPicture} />

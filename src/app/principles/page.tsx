@@ -12,7 +12,7 @@ export default function Principles() {
           <div className="text-[40px] font-bold ml-10 text-orange-700">
             R-Think AI Principles
           </div>
-          <div className="text-[20px] font-bold ml-10 text-orange-700 mt-12 md:mt-6">
+          <div className="text-[20px] ml-10 text-orange-700 mt-12 md:mt-6">
             Here we describe the principles we use to develop AI solutions.
           </div>
         </div>
