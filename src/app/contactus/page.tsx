@@ -7,7 +7,6 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -118,7 +117,7 @@ export default function ContactUs() {
       {form.formState.isSubmitSuccessful && (
         <div className="text-xl h-[60vh] mt-14 ml-10 mr-10">
           <p>
-            Thank you very much for considering us. We'll be in touch shortly!
+            Thank you very much for considering us. We will be in touch shortly!
           </p>
         </div>
       )}
