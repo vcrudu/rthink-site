@@ -65,9 +65,9 @@ export default function Header() {
           <li className="px-4 hover:underline">
           <Link href="/principles">Our Principles</Link>
           </li>
-         {/*  <li className="px-4 hover:underline">
-            <a href="mailto:info@r-think.ai">Contact us</a>
-          </li> */}
+          <li className="px-4 hover:underline">
+            <Link href="/contactus">Contact us</Link>
+          </li>
         </ul>
       </nav>
       <div className="flex flex-col justify-center flex-nowrap text-lg">
@@ -101,9 +101,9 @@ export default function Header() {
               <li className="h-10 flex items-center justify-center hover:bg-sky-300">
                 <Link href="/principles">Our Principles</Link>
               </li>
-             {/*  <li className="h-10 flex items-center justify-center hover:bg-sky-300">
-                <Link href="/">Contact us</Link>
-              </li> */}
+             <li className="h-10 flex items-center justify-center hover:bg-sky-300">
+                <Link href="/contactus">Contact us</Link>
+              </li>
             </ul>
           </div>
           <div

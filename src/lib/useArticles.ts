@@ -13,7 +13,6 @@ export type ArticlesListType = [];
 
 export function useArticles() {
   const { data, error, isLoading } = useSWR("/api/blog", fetcher);
-  console.log(data);
   return {
     articles: data === undefined ? [] : JSON.parse(data),
     isLoading,

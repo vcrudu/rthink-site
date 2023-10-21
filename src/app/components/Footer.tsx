@@ -1,5 +1,6 @@
 "use client";
 import { Separator } from "@/components/ui/separator";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -12,7 +13,7 @@ export default function Footer() {
         <div>
           <ul className="w-full flex flex-col justify-center text-base">
             <li className="h-10 flex items-center justify-center hover:bg-sky-300">
-              <a href="mailto:info@rthink.ai">Contact us</a>
+              <Link href="/contactus">Contact us</Link>
             </li>
           </ul>
         </div>

@@ -1,15 +1,10 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
-
-type ContactUsForm = {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
-};
+import { contactUsSchema, TContactUsSchema } from "@/lib/zodTypes";
 
 export async function POST(request: Request) {
-  const contactUsForm = (await request.json()) as ContactUsForm;
+  const body = await request.json();
+  const contactUsForm = contactUsSchema.parse(body);
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
