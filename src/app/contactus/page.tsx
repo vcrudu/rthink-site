@@ -48,7 +48,7 @@ export default function ContactUs() {
       {!form.formState.isSubmitSuccessful && (
         <div className="w-2/6">
           <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-2">
               <FormField
                 control={form.control}
                 name="name"
@@ -94,7 +94,7 @@ export default function ContactUs() {
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel>Message</FormLabel>
-                    <Textarea
+                    <Textarea className="h-[140px]"
                       placeholder="Type your message here."
                       {...field}
                     />
@@ -107,7 +107,7 @@ export default function ContactUs() {
                 ref={recaptchaRef}
                 onChange={handleCaptchaSubmission}
               />
-              <Button type="submit" disabled={!isVerified}>
+              <Button className="w-44" type="submit" disabled={!isVerified}>
                 Send
               </Button>
             </form>
