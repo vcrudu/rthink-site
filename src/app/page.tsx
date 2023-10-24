@@ -1,6 +1,7 @@
 import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
 import teamPicture from "@/app/images/office.jpg";
+import ServiceCards from "./components/ServiceCards";
 
 export default function Home() {
   return (
@@ -44,9 +45,9 @@ export default function Home() {
           </div>
 
           <div className="mt-5 ml-4 mb-2">
-            <b>Next wave</b> of AI-driven solutions is here: from intelligent 
-            { } <b>chatbots</b> to predictive insights, we&apos;re pioneering the future of
-            automation.
+            <b>Next wave</b> of AI-driven solutions is here: from intelligent
+            {} <b>chatbots</b> to predictive insights, we&apos;re pioneering the
+            future of automation.
           </div>
 
           {/* <div className="ml-4 mb-2">
@@ -69,6 +70,15 @@ export default function Home() {
         <div className="w-full lg:w-8/12 mt-5 pl-5 pr-5">
           <Image alt="Out team" src={teamPicture} />
         </div>
+      </div>
+      <div className="p-5">
+        <Separator className="bg-black"></Separator>
+      </div>
+      <div className="flex flex-col pl-5 pr-5">
+        <div className="flex flex-row mt-5 mb-5 justify-center">
+          <p className="text-[60px]">Services</p>
+        </div>
+        <ServiceCards />
       </div>
     </div>
   );
