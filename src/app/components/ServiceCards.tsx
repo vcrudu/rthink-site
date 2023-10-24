@@ -1,13 +1,10 @@
-"use client";
-
 import Image from "next/image";
 import textAnalyses from "../images/text-analysis.jpg";
 import visualAnalyses from "../images/visual-analysis.jpg";
 import agents from "../images/agents.jpg";
 import rl from "../images/rl.jpg";
-import { vi } from "vitest";
 
-export default () => {
+export default function ServiceCards(){
   return (
     <div className="flex flex-row justify-between">
       <div className="flex flex-col">
